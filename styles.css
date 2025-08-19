@@ -88,6 +88,13 @@ section {
     flex-shrink: 0;
 }
 
+.promo-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .menu-highlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,6 +163,10 @@ footer a {
     .card {
         width: 90%;
         max-width: 300px;
+    }
+
+    .promo-image {
+        height: 150px;
     }
 
     .menu-highlights {
