@@ -126,4 +126,74 @@ footer a {
 }
 
 .nav-menu.active {
-    display: flex
+    display: flex;
+}
+
+/* Media query para dispositivos móveis (telas até 768px) */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .menu-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    /* Menu hamburger para mobile */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #A52A2A;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-menu .cta-button {
+        margin: 10px auto;
+        display: block;
+        width: fit-content;
+    }
+}
