@@ -89,7 +89,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 1000px;
     margin: 0 auto;
 }
