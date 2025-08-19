@@ -90,6 +90,8 @@ section {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .card {
@@ -118,6 +120,8 @@ section {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 620px;
+    margin: 0 auto;
 }
 
 .location-delivery {
@@ -139,6 +143,17 @@ footer {
 footer a {
     color: #FFD700;
     text-decoration: none;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.instagram-icon {
+    width: 20px;
+    height: auto;
 }
 
 /* Estilos do menu hamburger */
