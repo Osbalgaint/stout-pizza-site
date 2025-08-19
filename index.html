@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOUT PIZZA - A Melhor Pizza da Cidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #FFFFFF; color: #333; }
+        header { background-color: #A52A2A; color: #FFFFFF; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: #FFFFFF; text-decoration: none; font-weight: bold; }
+        .hero { background-image: url('./static/imagem-pizza.jpg'); background-size: cover; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #FFFFFF; }
+        .hero h1 { font-size: 3em; margin-bottom: 10px; }
+        .hero p { font-size: 1.5em; margin-bottom: 20px; }
+        .cta-button { background-color: #FFD700; color: #A52A2A; padding: 15px 30px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .cta-button:hover { background-color: #FFA500; }
+        section { padding: 40px 20px; text-align: center; }
+        .promos { background-color: #F5F5F5; }
+        .carousel { display: flex; overflow-x: auto; gap: 20px; }
+        .card { background-color: #FFFFFF; border: 1px solid #DDD; padding: 20px; border-radius: 10px; width: 300px; }
+        .menu-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .location-delivery { background-color: #FFF; padding: 20px; }
+        footer { background-color: #A52A2A; color: #FFFFFF; padding: 20px; text-align: center; }
+        footer a { color: #FFD700; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./static/logo-stout-pizza.png" alt="Logo STOUT PIZZA" width="150">
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/promocoes">Promoções</a></li>
+                <li><a href="https://sistema-fidelidade.onrender.com">Fidelidade</a></li>
+                <li><a href="/localizacoes">Localizações</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/pedido" class="cta-button">Peça Online</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Bem-vindo à STOUT PIZZA</h1>
+        <p>Pizzas artesanais com ingredientes frescos! Peça no delivery ou visite-nos. Acumule pontos no nosso programa de fidelidade!</p>
+        <a href="/pedido" class="cta-button">Peça Sua Pizza Agora</a>
+    </section>
+    <section class="promos">
+        <h2>Promoções Imperdíveis</h2>
+        <div class="carousel">
+            <div class="card">
+                <img src="./static/pizza-promo1.jpg" alt="Promoção de Quarta" width="100%">
+                <h3>Quarta da Pizza Grande</h3>
+                <p>Compre uma pizza grande e ganhe 50% de desconto na segunda! Válido às quartas-feiras.</p>
+                <a href="/promocoes/quarta" class="cta-button">Peça Agora</a>
+            </div>
+            <div class="card">
+                <img src="./static/pizza-fidelidade.jpg" alt="Plano Cliente Fiel" width="100%">
+                <h3>Plano Cliente Fiel STOUT</h3>
+                <p>Faça 10 pedidos com pizza e ganhe uma grátis! Escolha entre Calabresa, Calabresa Paulista, Marguerita, Napolitana, Muçarela ou Rúcula com Tomates Secos.</p>
+                <a href="https://sistema-fidelidade.onrender.com" class="cta-button">Participe Agora</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Destaques do Nosso Menu</h2>
+        <div class="menu-highlights">
+            <div class="card">
+                <img src="./static/pizza-quatro-queijos.jpg" alt="Pizza Quatro Queijos" width="100%">
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Muçarela, parmesão, provolone e gorgonzola. R$34,90</p>
+            </div>
+            <div class="card">
+                <img src="./static/pizza-stoutkat.jpg" alt="Pizza StoutKat" width="100%">
+                <h3>Pizza StoutKat</h3>
+                <p>Nosso sabor especial da casa! R$36,90</p>
+            </div>
+        </div>
+    </section>
+    <section class="location-delivery">
+        <h2>Visite-nos ou Peça Delivery</h2>
+        <p>Estamos abertos para atendimento presencial! Venha nos conhecer em:</p>
+        <p><strong>Endereço:</strong> Rua da Pizza, 123, São Paulo, SP</p>
+        <p><strong>Horário:</strong> Segunda a Domingo, 17h às 23h</p>
+        <p>Prefere delivery? Peça online ou pelo WhatsApp (11) 99999-9999!</p>
+        <a href="/pedido" class="cta-button">Peça Delivery</a>
+    </section>
+    <section style="background-color: #FFD700; color: #A52A2A;">
+        <h2>Programa de Fidelidade STOUT PIZZA</h2>
+        <p>Acumule pontos a cada pedido e troque por pizzas grátis! Acesse agora.</p>
+        <a href="https://sistema-fidelidade.onrender.com" class="cta-button" style="background-color: #A52A2A; color: #FFFFFF;">Entrar no Fidelidade</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 STOUT PIZZA. Todos os direitos reservados.</p>
+        <div>
+            <a href="/privacidade">Política de Privacidade</a> | <a href="/termos">Termos de Uso</a>
+        </div>
+        <div>
+            Siga-nos: <a href="https://instagram.com/stoutpizza">Instagram</a> | <a href="https://facebook.com/stoutpizza">Facebook</a>
+        </div>
+        <p>Contato: (11) 99999-9999 | contato@stoutpizza.com.br</p>
+    </footer>
+</body>
+</html>
