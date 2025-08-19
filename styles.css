@@ -85,10 +85,11 @@ section {
     background-color: #A52A2A;
 }
 
-.carousel {
+.promo-container {
     display: flex;
-    overflow-x: auto;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -110,9 +111,13 @@ section {
 
 .menu-highlights {
     background-color: #A52A2A;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .location-delivery {
@@ -173,7 +178,7 @@ footer a {
         font-size: 0.9em;
     }
 
-    .carousel {
+    .promo-container {
         flex-direction: column;
         align-items: center;
     }
@@ -185,6 +190,11 @@ footer a {
 
     .promo-image {
         height: 150px;
+    }
+
+    .highlights-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu-highlights {
